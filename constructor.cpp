@@ -9,24 +9,19 @@ public:
     int roll;
     int cls;
     char section;
+
+    Student(int r, int s, int c, char *n)
+    {
+        roll = r;
+        section = s;
+        cls = c;
+        strcpy(name, n);
+    }
 };
 
 int main()
 {
-    Student s;
-    // s.name='rahat'; vul declaration
-    char nm[100] = "Rahim";
-    strcpy(s.name, nm);
-    s.roll = 19;
-    s.section = 'a';
-    s.cls = 11;
-
-    Student a;
-    a.roll = 55;
-    a.cls = 9;
-    a.section = 'b';
-    char nm2[100] = "Sinthia";
-    strcpy(a.name, nm2);
+    Student s(29, 'A', 9, "Sin akter");
 
     cout << s.name;
 
