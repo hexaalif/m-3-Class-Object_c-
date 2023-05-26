@@ -21,11 +21,14 @@ public:
 
 int main()
 {
-    Student s(29, 'A', 9, "Sin akter");
-    Student p(29, 'A', 9, "murgi");
+    char name[100] = "Rahim Ullah";
+    Student *sl = new Student(5, 'a', 11, name);
 
-    cout << s.name << endl;
-    cout << p.name;
+    // int *a = new int;
 
+    // cout << sl->name << endl;
+    // cout << sl->roll << endl;
+    // cout << sl->cls << endl;
+    cout << (*sl).name << endl;
     return 0;
 }

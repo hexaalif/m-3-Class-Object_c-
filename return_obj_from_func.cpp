@@ -19,13 +19,19 @@ public:
     }
 };
 
+Student fun()
+{
+    char name[100] = "Rahim Ullah";
+    Student sl(29, 'C', 7, name);
+    return sl;
+}
+
 int main()
 {
-    Student s(29, 'A', 9, "Sin akter");
-    Student p(29, 'A', 9, "murgi");
+    Student sl = fun();
 
-    cout << s.name << endl;
-    cout << p.name;
-
+    cout << sl.name << endl;
+    cout << sl.roll << endl;
+    cout << sl.cls << endl;
     return 0;
 }
