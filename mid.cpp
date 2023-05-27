@@ -19,8 +19,9 @@ public:
 
 int main()
 {
-    Person *s = new Person(5.3, 34, "rahim");
-    cout << s->age << endl;
+    char name[100] = "Shad";
+    Person *s = new Person(5.3, 34, name);
+    cout << s->name << endl;
 
     return 0;
 }
