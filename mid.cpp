@@ -23,5 +23,6 @@ int main()
     Person *s = new Person(5.3, 34, name);
     cout << s->name << endl;
 
+    cout << sizeof(name);
     return 0;
 }
