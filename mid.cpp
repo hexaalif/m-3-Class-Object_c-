@@ -12,14 +12,15 @@ public:
     Person(float h, int a, char *n)
     {
         height = h;
+        age = a;
         strcpy(name, n);
     }
 };
 
 int main()
 {
-    Person s(5.3, 34, "rahim");
-    cout << s.name << endl;
+    Person *s = new Person(5.3, 34, "rahim");
+    cout << s->age << endl;
 
     return 0;
 }
