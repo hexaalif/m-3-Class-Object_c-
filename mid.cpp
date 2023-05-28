@@ -38,3 +38,5 @@ int main()
     // cout << sizeof(name);
     return 0;
 }
+
+// person age compared;
