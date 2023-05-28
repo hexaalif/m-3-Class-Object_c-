@@ -19,10 +19,22 @@ public:
 
 int main()
 {
-    char name[100] = "Shad";
-    Person *s = new Person(5.3, 34, name);
-    cout << s->name << endl;
+    char name1[100] = "Shad";
+    char name2[100] = "Sakib";
+    Person *s1 = new Person(5.3, 34, name1);
+    Person *s2 = new Person(5.3, 64, name2);
 
-    cout << sizeof(name);
+    if (s1->age > s2->age)
+    {
+        cout << s1->name << " "
+             << "is older";
+    }
+    else
+    {
+        cout << s2->name << " "
+             << "is older";
+    }
+
+    // cout << sizeof(name);
     return 0;
 }
